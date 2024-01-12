@@ -1,3 +1,10 @@
+# PHP 8.2 Support
+Forked to support PHP 8.2. Install with `composer require redjam13/transactional`.
+
+See https://github.com/mailchimp/mailchimp-client-lib-codegen/pull/328.
+
+---
+
 <p align="center">
   <a href="https://mailchimp.com/developer/">
     <img src="https://raw.githubusercontent.com/mailchimp/mailchimp-client-lib-codegen/main/resources/images/mcdev-banner.png" alt="Mailchimp Developer" width="100%" height="auto">

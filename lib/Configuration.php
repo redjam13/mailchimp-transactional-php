@@ -41,13 +41,29 @@ use MailchimpTransactional\Api\WhitelistsApi;
 
 class Configuration
 {
-    protected $host = 'https://mandrillapp.com/api/1.0';
-    protected $apiKey = '';
-    protected $requestClient;
-    protected $defaultOutputFormat = '';
-    protected $timeout = 300;
+    protected string $host = 'https://mandrillapp.com/api/1.0';
+    protected string $apiKey = '';
+    protected RequestClient $requestClient;
+    protected string $defaultOutputFormat = '';
+    protected int $timeout = 300;
 
     public static $formatList = ['json', 'xml', 'php', 'yaml'];
+
+    public AllowlistsApi $allowlists;
+    public ExportsApi $exports;
+    public InboundApi $inbound;
+    public IpsApi $ips;
+    public MessagesApi $messages;
+    public MetadataApi $metadata;
+    public RejectsApi $rejects;
+    public SendersApi $senders;
+    public SubaccountsApi $subaccounts;
+    public TagsApi $tags;
+    public TemplatesApi $templates;
+    public UrlsApi $urls;
+    public UsersApi $users;
+    public WebhooksApi $webhooks;
+    public WhitelistsApi $whitelists;
 
     public function __construct()
     {
